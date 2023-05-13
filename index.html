@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>TIC TAC TOE</h1>
+      <div class="container">
+        <button class="button" id="button1" onclick="clicked(this.id)"></button>
+        <button class="button" id="button2" onclick="clicked(this.id)"></button>
+        <button class="button" id="button3" onclick="clicked(this.id)"></button>
+        <button class="button" id="button4" onclick="clicked(this.id)"></button>
+        <button class="button" id="button5" onclick="clicked(this.id)"></button>
+        <button class="button" id="button6" onclick="clicked(this.id)"></button>
+        <button class="button" id="button7" onclick="clicked(this.id)"></button>
+        <button class="button" id="button8" onclick="clicked(this.id)"></button>
+        <button class="button" id="button9" onclick="clicked(this.id)"></button>
+      </div>
+      <div id="result">
+        <h2></h2>
+      </div>
+      <button id="restart" onclick="location.reload()">Restart</button>
+      <div class="namebox">
+        <input
+          type="text"
+          id="player1"
+          class="names"
+          placeholder="Enter the name of Player1(O)"
+        />
+        <input
+          type="text"
+          id="player2"
+          class="names"
+          placeholder="Enter the name of Player2(X)"
+        />
+        <button id="ok" class="config" onclick="ok()">OK</button>
+        <button id="skip" onclick="ok()" class="config">skip</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script src="dom_manup.js"></script>
+</html>
